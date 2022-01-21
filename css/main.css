@@ -1,0 +1,222 @@
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../../img/header_banner.jpg);
+  background-size: cover;
+  background-position-x: 20%;
+}
+
+.bar {
+  background-color: #282d30;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 30px;
+  height: 50px;
+}
+.logo h1 {
+  font-family: "Pacifico", cursive;
+  color: #ed6c51;
+}
+
+.menu-desktop ul {
+  display: flex;
+}
+.menu-desktop ul li {
+  margin-right: 50px;
+}
+.menu-desktop ul li a {
+  color: #ed6c51;
+  font-family: "Permanent Marker", cursive;
+}
+.menu-desktop ul li a:hover {
+  color: #ebebe1;
+}
+.menu-desktop ul li:nth-child(5) {
+  margin-right: 0;
+}
+.menu-desktop ul li:nth-child(5) a {
+  color: #ebebe1;
+  background-color: #ed6c51;
+  padding: 10px 50px;
+}
+.menu-desktop ul li:nth-child(5) a:hover {
+  color: #282d30;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.social-media ul {
+  width: 70px;
+  height: calc(100vh - 66px);
+  background-color: #282d30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-media ul i {
+  font-size: 50px;
+  background: linear-gradient(to bottom right, #ff3431, #fbc597);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    justify-content: center;
+  }
+
+  .menu-desktop ul {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    box-sizing: border-box;
+  }
+  .menu-mobile .icon-burguer {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    font-size: 40px;
+    background: linear-gradient(to bottom right, #ff3431, #fbc597);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .menu-mobile ul {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 60%;
+    height: 0;
+    background-color: #282d30e1;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    overflow-y: hidden;
+  }
+  .menu-mobile ul li {
+    background-color: rgba(54, 59, 61, 0.795);
+    padding: 10px 0;
+    margin: 30px;
+    border-radius: 10px;
+  }
+  .menu-mobile ul li a {
+    color: #ebebe1;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.4rem;
+    padding-left: 30px;
+  }
+  .menu-mobile ul li:first-child {
+    background-color: #ed6c51;
+    padding: 10px 0;
+  }
+  .menu-mobile ul li:first-child a {
+    color: #ebebe1;
+  }
+  .menu-mobile ul li i {
+    float: left;
+    font-size: 30px;
+    padding: 2px 0 0 20px;
+    color: #ebebe1;
+  }
+  .menu-mobile .active {
+    height: calc(100vh - 66px);
+  }
+}
+@media screen and (max-width: 680px) {
+  .menu-mobile ul {
+    width: 100%;
+  }
+  .menu-mobile .active {
+    height: calc(100% - 125px);
+  }
+
+  .social-media {
+    width: 100%;
+    height: calc(100% - 66px);
+    display: flex;
+    align-items: flex-end;
+  }
+  .social-media ul {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #282d30;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+  .social-media ul i {
+    font-size: 50px;
+    background: linear-gradient(to bottom right, #ff3431, #fbc597);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+  }
+}
+.services .description-services {
+  display: flex;
+  align-items: center;
+}
+.services .description-services img {
+  width: 500px;
+  height: 400px;
+  margin: 20px 40px 20px 250px;
+}
+.services .description-services h2 {
+  text-align: justify;
+  width: 20%;
+  font-size: 1.2rem;
+}
+.services .description-services:nth-child(2) {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.services .description-services:nth-child(2) img {
+  margin: 10px 250px 10px 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sass": "^1.48.0"
+  },
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "website barbershop ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style expanded css/scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorferreira23/Project_BarberShop.git"
+  },
+  "author": "Junior Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniorferreira23/Project_BarberShop/issues"
+  },
+  "homepage": "https://github.com/juniorferreira23/Project_BarberShop#readme"
+}

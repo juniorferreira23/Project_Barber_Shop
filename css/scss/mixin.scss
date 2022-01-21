@@ -1,0 +1,13 @@
+@use 'variables.scss';  
+
+@mixin container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@mixin gradient-text-color {
+    background: variables.$gradient-text-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

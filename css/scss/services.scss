@@ -1,0 +1,34 @@
+@use 'mixin.scss';
+@use 'variables.scss';
+
+
+
+.services {
+
+    .description-services {
+        display: flex;
+        align-items: center;
+        // colocar um container no html e tirar as margens laterais
+        img {
+            width: 500px;
+            height: 400px;
+            margin: 20px 40px 20px 250px;
+        }
+
+        h2 {
+            text-align: justify;
+            width: 20%;
+            font-size: 1.2rem;
+        }
+
+        &:nth-child(2){
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            
+            img {
+                margin: 10px 250px 10px 40px;    
+            }
+        }
+    }
+
+}
